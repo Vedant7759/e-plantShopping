@@ -6,13 +6,21 @@ import ProductList from './ProductList';
 import CartItem from './CartItem';
 import './App.css';
 
+<<<<<<< HEAD
 export default function App() {
   const [page, setPage] = useState('home');
   const [showProductList, setShowProductList] = useState(false);
+=======
+const heroImage = 'https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=2000&q=90';
+
+export default function App() {
+  const [page, setPage] = useState('home');
+>>>>>>> 4e56d17ed847f7a1165edffd170af57e6fc6d5c4
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const cartItems = useSelector((state) => state.cart.items);
   const cartCount = cartItems.reduce((sum, item) => sum + item.quantity, 0);
 
+<<<<<<< HEAD
   const handleGetStartedClick = () => {
     setShowProductList(true);
     setPage('plants');
@@ -22,12 +30,20 @@ export default function App() {
   const navigate = (nextPage) => {
     setPage(nextPage);
     if (nextPage === 'plants') setShowProductList(true);
+=======
+  const navigate = (nextPage) => {
+    setPage(nextPage);
+>>>>>>> 4e56d17ed847f7a1165edffd170af57e6fc6d5c4
     setMobileMenuOpen(false);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
+<<<<<<< HEAD
     <div className="app-shell app-container">
+=======
+    <div className="app-shell">
+>>>>>>> 4e56d17ed847f7a1165edffd170af57e6fc6d5c4
       <header className="site-header">
         <button className="brand" onClick={() => navigate('home')} aria-label="Paradise Nursery home"><span className="brand-mark"><Leaf size={22} /></span><span>paradise<span className="brand-light">nursery</span><small>GROW A LITTLE HAPPINESS</small></span></button>
         <button className="mobile-menu-toggle" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} aria-label="Toggle navigation">{mobileMenuOpen ? <X /> : <Menu />}</button>
@@ -40,8 +56,13 @@ export default function App() {
 
       {page === 'home' && <>
         <main>
+<<<<<<< HEAD
           <section className="hero">
             <div className="hero-content"><span className="hero-kicker"><Sprout size={15} /> A FRESHER KIND OF HOME</span><h1>Welcome to Paradise Nursery</h1><h2 className="hero-subheading">Make room for <em>something green.</em></h2><p>Meet your new favourite houseplants. Thoughtfully picked, easy to love, and ready to make your space feel more alive.</p><button className="hero-button" onClick={handleGetStartedClick}>Get Started <ArrowRight size={18} /></button><div className="hero-footnote"><span className="hero-dot" /> A little nature goes a long way</div></div>
+=======
+          <section className="hero" style={{ backgroundImage: `linear-gradient(90deg, rgba(18, 42, 29, .88) 0%, rgba(18, 42, 29, .66) 43%, rgba(18, 42, 29, .12) 100%), url("${heroImage}")` }}>
+            <div className="hero-content"><span className="hero-kicker"><Sprout size={15} /> A FRESHER KIND OF HOME</span><h1>Make room for<br /><em>something green.</em></h1><p>Meet your new favourite houseplants. Thoughtfully picked, easy to love, and ready to make your space feel more alive.</p><button className="hero-button" onClick={() => navigate('plants')}>Get Started <ArrowRight size={18} /></button><div className="hero-footnote"><span className="hero-dot" /> A little nature goes a long way</div></div>
+>>>>>>> 4e56d17ed847f7a1165edffd170af57e6fc6d5c4
             <div className="hero-note"><span>01 / 03</span><div></div><span>GROW AT YOUR OWN PACE</span></div>
           </section>
           <section className="home-intro"><div><p className="eyebrow">A HOME THAT GROWS WITH YOU</p><h2>Bring the outside <em>in.</em></h2></div><p>From first-time plant parents to lifelong leaf lovers, find a green companion that fits your space and your rhythm.</p></section>
