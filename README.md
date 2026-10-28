@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # e-plantShopping — Paradise Nursery Plant Shopping Application
-=======
-# Paradise Nursery — Plant Shopping Application
->>>>>>> 4e56d17ed847f7a1165edffd170af57e6fc6d5c4
 
 A React + Vite plant-shopping application built for the final project. It includes a landing page, company information, categorized plant listings, and a Redux Toolkit shopping cart.
 
@@ -46,8 +42,4 @@ npm run build
 - `src/CartItem.jsx`
 
 ## Publish on GitHub
-<<<<<<< HEAD
 Create a **public** repository named `e-plantShopping`, upload the project files (including the `src` folder), then open each requested file on GitHub and copy its direct URL. Do not submit the example URLs; submit URLs from your own repository.
-=======
-Create a **public** repository named `paradise-nursery`, upload the project files (including the `src` folder), then open each requested file on GitHub and copy its direct URL. Do not submit the example URLs; submit URLs from your own repository.
->>>>>>> 4e56d17ed847f7a1165edffd170af57e6fc6d5c4
